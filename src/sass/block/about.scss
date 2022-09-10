@@ -25,6 +25,12 @@
 
     &:nth-child(1) {
         .about-block__image {
+            max-width: 13.5rem;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
         }
     
         .about-block__title {
@@ -47,6 +53,12 @@
     &:nth-child(3) {
         .about-block__image {
             margin-top: 7.3rem;
+            max-width: 26rem;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
         }
     
         .about-block__title {
