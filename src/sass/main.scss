@@ -18,7 +18,25 @@ body {
     background-color: #FCFBFB;
 }
 
+.link {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $base-color-text;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid rgba(143, 139, 141, 0.6);
+    transition: 0.4s;
+
+    &:hover {
+        color: $base-color-text-hover;
+        cursor: pointer;
+    }
+}
+
 @import "block/list";
 @import "block/header";
-
 @import "block/footer";
+@import "block/hero";

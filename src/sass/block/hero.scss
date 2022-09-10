@@ -1,0 +1,112 @@
+.hero {
+    background: url('../img/backgrounds/background-1.png') no-repeat center / cover;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 23.4rem;
+        padding-bottom: 16.4rem;
+    }
+
+    &__left {
+        max-width: 64.4rem;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $hero-title-font-size;
+        line-height: $hero-title-line-height;
+        text-transform: uppercase;
+        color: $hero-title-color-text;
+        margin-left: -0.5rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        margin-top: 2rem;
+        max-width: 62rem;
+    }
+
+    &__catalog {
+        margin-top: 2.7rem;
+    }
+
+    &__right {}
+
+    &__preview {}
+}
+
+.hero-preview {
+    background: linear-gradient(181.4deg, rgba(60, 60, 65, 0.12) 86.59%, rgba(137, 34, 255, 0) 140.64%);
+    border: 0.5px solid #FFFFFF;
+    backdrop-filter: blur(50px);
+    padding: 5.1rem 5rem 5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+
+    &__left {
+        max-width: 35rem;
+    }
+
+    &__under-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $hero-preview-undertitle-font-size;
+        line-height: $hero-preview-undertitle-line-height;
+        color: $base-color-text;
+
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $hero-preview-title-font-size;
+        line-height: $hero-preview-title-line-height;
+        text-transform: uppercase;
+        color: $base-color-text;
+        margin-top: 1.5rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $hero-preview-descript-font-size;
+        line-height: $hero-preview-descript-line-height;
+        color: $base-color-text;
+        max-width: 32.9rem;
+        margin-top: 1.5rem;
+    }
+
+    &__right {}
+
+    &__image-block {
+        width: 22.6rem;
+        height: 26.9rem;
+        background: #FAF7F4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image {
+        max-width: 185px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
