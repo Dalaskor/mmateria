@@ -36,7 +36,33 @@ body {
     }
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.1rem;
+    
+    p {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $title-font-size;
+        line-height: $title-line-height;
+        text-align: center;
+        text-transform: uppercase;
+        color: $base-color-text;
+    }
+    span {
+        content: '';
+        display: block;
+        width: 9.7rem;
+        height: 0.1rem;
+        background: #656565;
+    }
+}
+
 @import "block/list";
 @import "block/header";
 @import "block/footer";
 @import "block/hero";
+@import "block/about";

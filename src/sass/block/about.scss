@@ -1,0 +1,129 @@
+.about {
+    &__container {
+        padding-top: 14.8rem;
+        padding-bottom: 7.5rem;
+    }
+
+    &__title {}
+
+    &__blocks {
+        margin-top: 6.3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {}
+}
+
+.about-block {
+    background: #E5DFD7;
+    width: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.8rem 4.7rem 4.7rem 4.8rem;
+
+    &:nth-child(1) {
+        .about-block__image {
+        }
+    
+        .about-block__title {
+            margin-top: 5rem;
+        }
+    
+        .about-block__description {
+        }
+    
+        .about-block__more {
+            // margin-top: 5.7rem;
+            margin-top: auto;
+        }
+    }
+
+    &:nth-child(2) {
+        padding: 0rem;
+    }
+
+    &:nth-child(3) {
+        .about-block__image {
+            margin-top: 7.3rem;
+        }
+    
+        .about-block__title {
+        }
+    
+        .about-block__description {
+        }
+    
+        .about-block__more {
+            margin-top: 5.3rem;
+        }
+    }
+
+    &__image {
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $title-font-size;
+        line-height: 4rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $base-color-text;
+        max-width: 31.7rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        text-align: center;
+        color: $base-color-text;
+        max-width: 31.7rem;
+        margin-top: 3rem;
+    }
+
+    &__more {
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
+
+    &__video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            width: 7.8rem;
+            height: 7.8rem;
+            border-radius: 50%;
+            background: #86755E url('../img/buttons/play.svg') center no-repeat;
+            border: 0.5px solid #FFFFFF;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            &::before {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
