@@ -1,0 +1,95 @@
+.answers {
+    &__container {
+        padding-top: 7.9rem;
+        padding-bottom: 14.2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 49%;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $title-font-size;
+        line-height: 6.7rem;
+        text-transform: uppercase;
+        font-feature-settings: 'kern' off;
+        color: $base-color-text;
+        max-width: 48.4rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        margin-top: 3.5rem;
+        max-width: 44.8rem;
+    }
+
+    &__right {}
+
+    &__form {}
+}
+
+.answer-form {
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.9rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: $base-color-text;
+        margin-top: 4rem;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 6.2rem;
+        margin-top: 5.7rem;
+        margin-left: 0.7rem;
+    }
+
+    &__left {
+        width: 50%;
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+    &__input {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        background-color: #FCFBFB;
+        border: none;
+        border-bottom: 1px solid #454A4F;
+        padding-bottom: 1.3rem;
+        min-height: 3.8rem;
+        width: 100%;
+
+        &_name {}
+
+        &_email {
+            margin-top: 4.4rem;
+        }
+
+        &_phone {}
+    }
+
+    &__button {
+        margin-top: 5.6rem;
+    }
+}

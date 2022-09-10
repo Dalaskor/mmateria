@@ -1,0 +1,107 @@
+.mission {
+    &__container {
+        padding-top: 6.8rem;
+        padding-bottom: 5.5rem;
+        display: flex;
+        gap: 9rem;
+    }
+
+    &__left {
+        min-width: 62.5rem;
+    }
+
+    &__seo-title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $title-font-size;
+        line-height: 6.7rem;
+        text-transform: uppercase;
+        font-feature-settings: 'kern' off;
+        color: $base-color-text;
+        max-width: 42.5rem;
+    }
+
+    &__seo-body {
+        margin-top: 7.6rem;
+        display: flex;
+        justify-content: start;
+    }
+
+    &__seo-logo {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    &__logo-img {
+        max-width: 9.2rem;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__logo-text {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.9rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: $base-color-text;
+        max-width: 16.7rem;
+        margin-left: 1.4rem;
+        margin-top: -0.4rem;
+    }
+
+    &__seo-description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: #454A4F;
+        max-width: 31.6rem;
+        margin-left: 3.5rem;
+        margin-top: -0.4rem;
+    }
+
+    &__right {
+    }
+
+    &__undertitle {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        letter-spacing: 0.085em;
+        text-transform: uppercase;
+        color: $base-color-text;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.9rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: $base-color-text;
+        padding-bottom: 3.6rem;
+        border-bottom: 0.1rem solid #DCD5CB;
+        margin-top: 2.4rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        margin-top: 3.7rem;
+    }
+}
