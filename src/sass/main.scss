@@ -1,0 +1,22 @@
+@import "_fonts";
+@import "_vars";
+@import "_mixins";
+@import "set";
+
+
+[class*="__container"] {
+    max-width: 154rem;
+    margin: 0px auto;
+    padding: 0rem 1.5rem;
+}
+
+.scroll-lock{
+    overflow: hidden;
+}
+
+body {
+    background-color: #FCFBFB;
+}
+
+@import "block/list";
+@import "block/header";

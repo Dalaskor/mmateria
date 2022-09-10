@@ -1,0 +1,62 @@
+.header {
+    &__container {
+        padding-top: 0.8rem;
+        padding-bottom: 1.1rem;
+    }
+
+    &__menu {}
+}
+
+.nav {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 2.7rem;
+
+        &_left {
+            justify-content: start;
+        }
+        
+        &_right {
+            justify-content: end;
+        }
+    }
+
+    &__item {}
+
+    &__link {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        transition: 0.4s;
+
+        &:hover {
+            color: $base-color-text-hover;
+        }
+    }
+
+    &__logo {
+        max-width: 33rem;
+        transition: 0.4s;
+        margin-left: 2.4rem;
+        margin-top: -0.4rem;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
