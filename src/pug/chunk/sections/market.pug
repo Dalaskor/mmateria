@@ -1,0 +1,196 @@
+section.market
+    .market__container
+        .market__left
+            .market__sidefilters.sidefilters
+                .sidefilters__title
+                    | Фильтры
+                .sidefilters__body
+                    .sidefilters__filter.sidefilters__filter_category
+                        p Категория
+                        .chevron
+                            <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.50781 1L7.34757 7L13.1873 1" stroke="#503C3C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    .sidefilters__filter-body.sidefilters__filter-body_category
+                        ul.sidefilters__categories
+                            li.sidefilters__category 
+                                a Цветовой акцент
+                            li.sidefilters__category 
+                                a Легкость
+                            li.sidefilters__category 
+                                a Линия
+                            li.sidefilters__category 
+                                a Силуэты
+                            li.sidefilters__category 
+                                a Цветы
+                    .sidefilters__filter.sidefilters__filter_price
+                        p Цена
+                        .chevron
+                            <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.50781 1L7.34757 7L13.1873 1" stroke="#503C3C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    .sidefilters__filter-body.sidefilters__filter-body_price
+                        .sidefilters__price-slider.price-slider#priceSlider
+                        .sidefilters__price-range
+                            input.sidefilters__price-block#priceFrom
+                            .sidefilters__price-sep
+                            input.sidefilters__price-block#priceTo
+                    .sidefilters__filter.sidefilters__filter_style
+                        p Стиль
+                        .chevron
+                            <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.50781 1L7.34757 7L13.1873 1" stroke="#503C3C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    .sidefilters__filter-body.sidefilters__filter-body_style
+                        .sidefilters__input
+                            .checkbox
+                                | Современный
+                                input(type="checkbox", checked, name="cbStyle1")
+                        .sidefilters__input
+                            .checkbox
+                                | Импрессионисм
+                                input(type="checkbox", name="cbStyle2")
+                        .sidefilters__input
+                            .checkbox
+                                | Абстрактный
+                                input(type="checkbox", name="cbStyle3")
+                        .sidefilters__input
+                            .checkbox
+                                | Современный
+                                input(type="checkbox", name="cbStyle4")
+                        .sidefilters__more.link
+                            | Показать все
+                    .sidefilters__filter.sidefilters__filter_size
+                        p Размер
+                        .chevron
+                            <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.50781 1L7.34757 7L13.1873 1" stroke="#503C3C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    .sidefilters__filter-body.sidefilters__filter-body_size
+                        .sidefilters__input
+                            .checkbox
+                                | 40x120 см
+                                input(type="checkbox", checked, name="cbSize1")
+                        .sidefilters__input
+                            .checkbox
+                                | 50x40 см
+                                input(type="checkbox", name="cbSize2")
+                        .sidefilters__input
+                            .checkbox
+                                | 50x40 см
+                                input(type="checkbox", name="cbSize3")
+                        .sidefilters__input
+                            .checkbox
+                                | 40x70 см
+                                input(type="checkbox", name="cbSize4")
+                        .sidefilters__more.link
+                            | Показать все
+        .market__right
+            .market__header
+                .market__title
+                    | Все Картины
+                .market__sorting
+                    p Порядок:
+                    select(name="productSort").market__sort#productSort
+                        option(disabled) По умолчанию
+                        option(value="default") По умолчанию
+                        option(value="priseUpper") Цена, по возрастанию
+                        option(value="priseLower") Цена, по убыванию
+            .market__body
+                .market__products
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-1.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-2.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-3.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-3.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-1.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-2.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-2.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-3.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-1.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-1.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-2.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.
+                    a.market__product.product
+                        .product__image
+                            img(src="img/products/product-3.png", alt="Изображение товара")
+                        .product__body
+                            .product__name
+                                | Фактурная абстракция
+                            .product__price
+                                | 100.000 р.

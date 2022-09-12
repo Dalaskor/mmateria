@@ -1,4 +1,5 @@
 .answers {
+    background: url('../img/backgrounds/background-2.png') no-repeat 0% 76%;
     &__container {
         padding-top: 7.9rem;
         padding-bottom: 14.2rem;
@@ -73,7 +74,7 @@
         font-size: $base-font-size;
         line-height: $base-line-height;
         color: $base-color-text;
-        background-color: #FCFBFB;
+        background-color: transparent;
         border: none;
         border-bottom: 1px solid #454A4F;
         padding-bottom: 1.3rem;

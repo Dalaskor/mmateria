@@ -1,0 +1,388 @@
+.new-select {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+}
+
+.new-select__list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.new-select__item span:hover {
+    // color: #12b223;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    background: url('path-to-image') no-repeat right center / cover;
+    opacity: 0.6;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.market {
+    &__container {
+        padding-top: 13rem;
+        padding-bottom: 13rem;
+        display: flex;
+    }
+
+    &__left {
+        min-width: 32.9rem;
+    }
+
+    &__right {
+        width: 100%;
+        padding-left: 6.7rem;
+    }
+
+    &__sidefilters {}
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: $base-color-text;
+    }
+
+    &__sorting {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    &__sort {
+        display: block;
+        // max-width: 26.5rem;
+        width: 100%;
+        padding-right: 1.5rem;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 1.9rem;
+            right: 0;
+            width: 1.3rem;
+            height: 0.8rem;
+            background: url('../img/buttons/chevron-down.svg') no-repeat center;
+        }
+    }
+
+    &__body {
+        margin-top: 6rem;
+    }
+
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4.2rem;
+    }
+
+    &__product {}
+}
+
+.product {
+    display: block;
+    max-width: 34.3rem;;
+
+    &__image {
+        width: 34.3rem;
+        min-height: 46.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.2rem;
+    }
+
+    &__name {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #4A4A4A;
+    }
+
+    &__price {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #9D8E7A;
+        text-align: center;
+        margin-top: 0.8rem;
+    }
+}
+
+.sidefilters {
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $sidefilter-title-font-size;
+        line-height: $sidefilter-title-line-height;
+        text-transform: uppercase;
+        color: $base-color-text;
+    }
+
+    &__body {
+        margin-top: 6rem;
+    }
+
+    &__filter {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $sidefilter-title-font-size;
+        line-height: $sidefilter-title-line-height;
+        text-transform: uppercase;
+        color: $sidefilter-color-text;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1.1rem;
+        border-bottom: 0.1rem solid #DCD5CB;
+        cursor: pointer;
+        margin-top: 6.5rem;
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .chevron {
+            width: 1.4rem;
+            height: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.4s;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &_category {}
+
+        &_price {}
+
+        &_style {}
+
+        &_size {}
+    }
+
+    &__filter-body {
+        display: none;
+        padding-top: 1.5rem;
+
+        &_category {}
+
+        &_price {}
+
+        &_style {}
+
+        &_size {}
+    }
+
+    &__categories {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__category {
+        a { 
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: $filter-font-size;
+            line-height: $filter-line-height;
+            color: $base-color-text;
+            cursor: pointer;
+        }
+    }
+
+    &__input {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $filter-font-size;
+        line-height: $filter-line-height;
+        color: $base-color-text;
+        margin-top: 2.2rem;
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .checkbox {
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            padding-left: 5rem;
+
+            &::before {
+                content: '';
+                width: 3.6rem;
+                height: 3.6rem;
+                background: #E7E5E7;
+                position: absolute;
+                left: 0;
+                top: -0.2rem;
+            }
+
+            &::after {
+                display: none;
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -0.2rem;
+                width: 3.6rem;
+                height: 3.6rem;
+                background: url('../img/buttons/checked.svg') center no-repeat;
+            }
+
+            input {
+                display: none;
+            }
+        }
+
+        .checkbox.active {}
+
+        .checkbox.active::before {}
+
+        .checkbox.active::after {
+            display: block;
+        }
+    }
+
+    &__price-slider {
+        margin-top: 1rem;
+    }
+
+    &__price-range {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.6rem;
+    }
+
+    &__price-block {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+        color: #4A4A4A;
+        width: 13rem;
+        height: 5rem;
+        background: #E7E5E7;
+        padding: 0 1.8rem 0px 1.8rem;
+        overflow: hidden;
+        border: none;
+    }
+
+    &__price-sep {
+        content: '';
+        width: 2.2rem;
+        height: 0.1rem;
+        background: rgba(184, 172, 176, 0.7);
+    }
+
+    &__more {
+        margin-top: 2.1rem;
+    }
+}
+
+.price-slider {
+    &__slider {
+        border: none !important;
+        height: 0.113rem !important;
+        background: rgba(184, 172, 176, 0.7);
+    }
+
+    &__handle {
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        background: #E5DFD7 !important;
+        border: none !important;
+        top: -0.6rem !important;
+
+        &:focus-visible {
+            outline: none !important;
+        }
+    }
+    
+    &__range {
+        background: #DCD5CB !important;
+    }
+}
