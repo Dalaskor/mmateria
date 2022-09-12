@@ -1,0 +1,198 @@
+.catalog-hero {
+    background: url('../img/backgrounds/background-1.png') no-repeat center / cover;
+    padding-top: 10.8rem;
+
+    &__container {
+        max-width: 100%;
+        padding-left: 20.9rem;
+        display: flex;
+        border-top: 1px solid #DCD5CB;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 78.3rem;
+        z-index: 99;
+        flex-shrink: 0;
+    }
+
+    &__left-inner {
+        max-width: 63rem;
+        margin-top: 21.8rem;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $hero-title-font-size;
+        line-height: $hero-title-line-height;
+        text-transform: uppercase;
+        color: $hero-title-color-text;
+        margin-left: -0.4rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        max-width: 49.5rem;
+        margin-top: 2rem;
+    }
+
+    &__more {
+        margin-top: 3.3rem;
+    }
+
+    &__strength {
+        display: flex;
+        align-items: center;
+        gap: 3.3rem;
+        margin-top: auto;
+        margin-bottom: 3.3rem;
+        position: relative;
+        &::before {
+            content: '';
+            width: 50vw;
+            height: 0;
+            border: 1px solid #DCD5CB;
+            position: absolute;
+            top: -3.3rem;
+            right: -0.5rem;
+        }
+    }
+
+    &__strength-image {
+        max-width: 11.3rem;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__strength-body {
+        max-width: 49.7rem;
+    }
+
+    &__strength-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $hero-preview-undertitle-font-size;
+        line-height: $hero-preview-undertitle-line-height;
+        text-transform: capitalize;
+        color: #4A4A4A;
+    }
+
+    &__strength-description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $hero-preview-descript-font-size;
+        line-height: $base-line-height;
+        color: #46494F;
+        margin-top: 1.2rem;
+    }
+
+    &__right {
+        width: 100%;
+        min-height: 84.9rem;
+        overflow: hidden;
+    }
+
+    &__swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    &__swiper-wrapper {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+    }
+
+    &__swiper-slide {
+        padding: 3.8rem 3.9rem 4.9rem 3.9rem;
+        border-left: 1px solid #DCD5CB;
+        min-width: 53.9rem;
+        // &:last-child {
+        //     border-right: 1px solid #DCD5CB;
+        // }
+    }
+
+    &__swiper-image {
+        max-width: 46.1rem;
+        max-height: 63.3rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__swiper-name {
+        border-bottom: 2px solid rgba(143, 139, 141, 0.6);
+        padding-bottom: 1.9rem;
+        margin-top: 3.9rem;
+
+        p {
+            font-family: 'PP Right Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #4A4A4A;
+        }
+    }
+
+    &__swiper-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.7rem;
+    }
+
+    &__swiper-price {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #4A4A4A;
+    }
+
+    &__swiper-link {
+        
+    }
+
+    &__swiper-btn-next {
+        width: 14.1rem;
+        height: 14.1rem;
+        border-radius: 50%;
+        border: 1px solid #DCD5CB;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 47.5rem;
+        top: 21.8rem;
+        transition: 0.4s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.9;
+        }
+    }
+}
