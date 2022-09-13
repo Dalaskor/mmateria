@@ -1,0 +1,50 @@
+.product-delivery {
+    &__container {
+        padding-top: 7.1rem;
+        padding-bottom: 8.2rem;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 4.7rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__body {
+        display: flex;
+        gap: 6.3rem;
+        margin-top: 6rem;
+    }
+
+    &__left {
+        width: 50%;
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+    &__name {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 2.6rem;
+        text-transform: uppercase;
+        color: $base-color-text
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-color-text;
+        margin-top: 2.5rem;
+    }
+}

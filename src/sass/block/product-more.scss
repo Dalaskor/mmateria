@@ -1,0 +1,16 @@
+.product-more {
+    &__container {
+        padding-top: 8.2rem;
+        padding-bottom: 14rem;
+    }
+
+    &__title {}
+
+    &__list {
+        display: flex;
+        gap: 4.7rem;
+        margin-top: 6.3rem;
+    }
+
+    &__item {}
+}

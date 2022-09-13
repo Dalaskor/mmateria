@@ -2,10 +2,11 @@
     position: absolute;
     z-index: 999;
     width: 100%;
+    border-bottom: 1px solid #DCD5CB;
 
     &__container {
         padding-top: 0.8rem;
-        padding-bottom: 1.1rem;
+        padding-bottom: 0.8rem;
     }
 
     &__menu {}
