@@ -28,6 +28,7 @@ export function productDetail () {
         slidesPerGroup: 1,
         // spaceBetween: 35,
         loop: false,
+        allowTouchMove: false,
 
         navigation: {
             prevEl: '.product-hero__prev-btn',
@@ -40,6 +41,10 @@ export function productDetail () {
             bulletClass: 'product-hero__bullet',
             bulletActiveClass: 'product-hero__bullet_active',
         },
+    });
+
+    prodcutDetailSideSlider.on('click', function() {
+        prodcutDetailMainSlider.slideTo(prodcutDetailSideSlider.clickedIndex);
     });
 
     // SORT FILTER

@@ -2,12 +2,19 @@
 @import "_vars";
 @import "_mixins";
 @import "set";
+@import "vendor/fancybox";
 
 
 [class*="__container"] {
     max-width: 154rem;
     margin: 0px auto;
     padding: 0rem 1.5rem;
+}
+
+.fancybox__container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .scroll-lock{
