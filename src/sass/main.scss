@@ -68,6 +68,22 @@ body {
     }
 }
 
+.fade {
+    display: none;
+
+    &::before {
+        content: '';
+        background: #000;
+        position: fixed; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        opacity: 0.7;
+        z-index: 9999;
+    }
+}
+
 @import "block/list";
 @import "block/header";
 @import "block/footer";
@@ -83,3 +99,4 @@ body {
 @import "block/product-delivery";
 @import "block/product-more";
 @import "block/main-menu";
+@import "block/modal-order";

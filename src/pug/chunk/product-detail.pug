@@ -2,3 +2,19 @@ include sections/product-hero
 include sections/about-product
 include sections/product-delivery
 include sections/product-more
+
+.fade
+    section.modal-order
+        .modal-order__container
+            .modal-order__title оставьте заявку
+            .modal-order__close
+                img(src="img/buttons/cross.svg")
+            form.modal-order__form
+                input(type="text", name="", placeholder="Ваше имя *").modal-order__input.modal-order__input_name
+                input(type="tel", name="", placeholder="Ваш телефон *").modal-order__input.modal-order__input_phone
+                input(type="email", name="", placeholder="E-mail *").modal-order__input.modal-order__input_mail
+                .sidefilters__input.modal-order__input.modal-order__input_personal
+                    .checkbox
+                        | Я согласен(а) на обработку персональных данных
+                        input(type="checkbox", name="")
+                button(type="submit").modal-order__submit.link Отправить

@@ -1,0 +1,96 @@
+.modal-order {
+    position: fixed;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50.6rem;
+    background-color: #FFFFFF;
+    z-index: 99999;
+	opacity: 1;
+
+    &__container {
+        max-width: 44.6rem;
+        padding: 0;
+        margin: 3rem auto 3rem auto;
+        border: 1px solid #DCD5CB;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.9rem;
+        line-height: 4.5rem;
+        text-transform: uppercase;
+        color: #46494F;
+        margin-top: 5.6rem;
+    }
+
+    &__close {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            object-fit: contain;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-top: 2.9rem;
+        margin-bottom: 4rem;
+    }
+
+    &__input {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #454A4F;
+        background-color: none;
+        border: none;
+        border-bottom: 0.1rem solid #454A4F;
+        padding-bottom: 1.3rem;
+        margin-top: 5rem;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &_name {}
+
+        &_phone {}
+
+        &_mail {}
+
+        &_personal {
+            border: none;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.2rem;
+            margin-top: 2.9rem;
+        }
+    }
+
+    &__submit {
+        margin-top: 3rem;
+        margin-right: auto;
+    }
+}
