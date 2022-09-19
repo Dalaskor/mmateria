@@ -1,0 +1,250 @@
+.cart {
+    padding-top: 23.7rem;
+    padding-bottom: 14rem;
+
+    &__container {}
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__body {
+        margin-top: 8.9rem;
+    }
+
+    &__bottom {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 4.7rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__back {
+        display: flex;
+        align-items: center;
+        gap: 2.2rem;
+
+        &:hover {
+            cursor: pointer;
+            color: $base-color-text-hover;
+        }
+
+        p {
+            display: inline-block;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: #46494F;
+            padding-bottom: 0.2rem;
+            border-bottom: 0.2rem solid rgba(143, 139, 141, 0.6);
+            transition: 0.4s;
+        }
+    }
+
+    &__back-image {
+        display: inline-block;
+        transform: rotate(180deg);
+        width: 4.8rem;
+        height: 1rem;
+
+        img {
+            width: 4.8rem;
+            height: 1rem;
+            object-fit: contain;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__head {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: #46494F;
+
+        &_name {}
+
+        &_count {
+            margin-left: 69.2rem;
+        }
+
+        &_price {
+            margin-left: 32.7rem;
+        }
+    }
+
+    &__list {
+        margin-top: 1.6rem;
+    }
+
+    &__item {}
+
+    &__total-price {
+        display: flex;
+        align-items: end;
+        gap: 1.5rem;
+
+        p {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: #454A4F;
+        }
+    }
+
+    &__price {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #9D8E7A;
+    }
+
+    &__place {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        text-transform: uppercase;
+        color: #454A4F;
+        width: 30rem;
+        height: 7.4rem;
+        background: #E5DFD7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
+
+.cart-item {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-top: 1px solid #DCD5CB;
+    display: flex;
+    align-items: center;
+
+    &__image {
+        width: 22.9rem;
+        height: 20.7rem;
+
+        img {
+            width: 22.9rem;
+            height: 20.7rem;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        max-width: 28.8rem;
+        width: 100%;
+        margin-left: 5rem;
+    }
+
+    &__name {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 2.2rem;
+        text-transform: uppercase;
+        color: #4A4A4A;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #4A4A4A;
+    }
+
+    &__count {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #46494F;
+        max-width: 12.6rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 20.1rem;
+    }
+
+    &__minus {
+        user-select: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__plus {
+        user-select: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__num {}
+
+    &__price {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #9D8E7A;
+        margin-left: 32.9rem;
+    }
+
+    &__delete {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-left: auto;
+
+        img {
+            width: 1.2rem;
+            height: 1.2rem;
+            object-fit: contain;
+        }
+    }
+}

@@ -7,6 +7,7 @@ import { sidefilters } from './module/sidefilters.js';
 import { productDetail } from './module/productDetail.js';
 import { mainMenu } from './module/mainMenu.js';
 import { modalOrder } from './module/modalOrder.js';
+import { cart } from './module/cart.js';
 
 Fancybox.bind('[data-fancybox="productDetail"]', {
     Toolbar: {
@@ -23,4 +24,5 @@ $(document).ready(function() {
     productDetail();
     mainMenu();
     modalOrder();
+    cart();
 });
