@@ -17,4 +17,15 @@ include sections/product-more
                     .checkbox
                         | Я согласен(а) на обработку персональных данных
                         input(type="checkbox", name="")
-                button(type="submit").modal-order__submit.link Отправить
+                a.modal-order__submit.link Отправить
+
+    section.modal-order-ready
+        .modal-order-ready__container
+            .modal-order__close
+                img(src="img/buttons/cross.svg")
+            .modal-order-ready__title.title
+                span
+                | Спасибо За Ваше Обращение
+                span
+            .modal-order-ready__subtitle
+                | Наш менеджер свяжется с вами

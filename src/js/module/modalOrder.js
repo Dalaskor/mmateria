@@ -4,6 +4,8 @@ export function modalOrder () {
     $('.product-hero__button').click(function() {
 		$('.fade').fadeIn();
         $('body').toggleClass('scroll-lock');
+        $('.modal-order').show();
+        $('.modal-order-ready').hide();
 		return false;
 	});	
 
@@ -11,6 +13,7 @@ export function modalOrder () {
 	$('.modal-order__close').click(function() {
 		$(this).parents('.fade').fadeOut();
         $('body').toggleClass('scroll-lock');
+
 		return false;
 	});        
  
@@ -30,4 +33,9 @@ export function modalOrder () {
 			$(this).fadeOut();
 		}
 	});
+
+    $('.modal-order__submit').click(function() {
+        $('.modal-order').hide();
+        $('.modal-order-ready').show();
+    });
 };
