@@ -1,44 +1,40 @@
-import $ from "jquery";
-import 'jquery-ui';
+import $ from 'jquery';
 
-export function sidefilters () {
-    // Slidedown for filters
-    $('.sidefilters__filter').click(function() {
-        const filterBody = $(this).next();
-        const filterChevron = $(this).children('.chevron');
-        if(filterBody.is(":hidden")) {
-            $(filterBody).slideDown();
-            $(filterChevron).css("transform","rotate(180deg)")
+export function inputs () {
+    // CHECKBOX
+    $.each($('.checkbox'), function(index, val) {
+        if($(this).find('input').prop('checked') == true) {
+            $(this).addClass('active');
+        }
+    });
+    $(document).on('click', '.checkbox', function(event) {
+        if($(this).hasClass('active')) {
+            $(this).find('input').prop('checked', false);
         } else {
-            $(filterBody).slideUp();
-            $(filterChevron).css("transform","rotate(0deg)")
+            $(this).find('input').prop('checked', true);
         }
+        $(this).toggleClass('active');
+
+        return false;
     });
 
-    // PRICE SLIDER
-    $("#priceSlider").slider({
-        classes: {
-            "ui-slider": "price-slider__slider",
-            "ui-slider-handle": "price-slider__handle",
-            // "ui-slider-range": "ui-corner-all ui-widget-header",
-            "ui-slider-range": "price-slider__range",
-        },
-        range: true,
-        min: 0,
-        max: 397000,
-        step: 1000,
-        values: [0, 397000],
-        slide: function( event, ui ) {
-            $('#priceFrom').val(ui.values[0]);
-            $('#priceTo').val(ui.values[1]);
+    // RADIO
+    $.each($('.radio'), function(index, val) {
+        if($(this).find('input').prop('checked') == true) {
+            $(this).addClass('active');
         }
     });
+    $(document).on('click', '.radio', function(event) {
+        $(this).parents('.radio-buttons').find('.radio').removeClass('active');
+        $(this).parents('.radio-buttons').find('.radio input').prop('checked', false);
+        $(this).toggleClass('active');
+        $(this).find('input').prop('checked', true);
 
-    $('#priceFrom').val($('#priceSlider').slider('values', 0));
-    $('#priceTo').val($('#priceSlider').slider('values', 1));
+        return false;
+    });
 
     // SORT FILTER
-    $('.market__sort').each(function() {
+    $('.input .select').each(function() {
         const _this = $(this),
             selectOption = _this.find('option'),
             selectOptionLength = selectOption.length,
@@ -46,7 +42,7 @@ export function sidefilters () {
             duration = 450; // длительность анимации 
     
         _this.hide();
-        _this.wrap('<div class="market__sort"></div>');
+        _this.wrap('<div class="select__content"></div>');
         $('<div>', {
             class: 'new-select',
             text: _this.children('option:disabled').text()
@@ -92,4 +88,4 @@ export function sidefilters () {
             }
         });
     });
-}
+};

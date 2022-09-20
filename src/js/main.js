@@ -1,6 +1,7 @@
 import $ from "jquery";
 import { Fancybox } from "@fancyapps/ui";
 
+import { inputs } from './module/inputs.js';
 import { answerForm } from './module/answerForm.js';
 import { catalogHeroSwiper } from './module/catalogHeroSwiper.js';
 import { sidefilters } from './module/sidefilters.js';
@@ -18,6 +19,7 @@ Fancybox.bind('[data-fancybox="productDetail"]', {
 });
 
 $(document).ready(function() {
+    inputs();
     answerForm();
     catalogHeroSwiper();
     sidefilters();

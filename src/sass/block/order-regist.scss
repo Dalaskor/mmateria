@@ -1,0 +1,327 @@
+.order-regist {
+    padding-top: 23.7rem;
+    padding-bottom: 14rem;
+
+    &__container {}
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 4.7rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__back {
+        display: flex;
+        align-items: center;
+        gap: 2.2rem;
+
+        p {
+            display: inline-block;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: #46494F;
+            padding-bottom: 0.2rem;
+            border-bottom: 0.2rem solid rgba(143, 139, 141, 0.6);
+            transition: 0.4s;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $base-color-text-hover;
+        }
+    }
+
+    &__back-image {
+        display: inline-block;
+        transform: rotate(180deg);
+        width: 4.8rem;
+        height: 1rem;
+
+        img {
+            width: 4.8rem;
+            height: 1rem;
+            object-fit: contain;
+        }
+    }
+
+    &__form {
+        margin-top: 4.3rem;
+    }
+}
+
+.form-order-regist {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        max-width: 79.7rem;
+        width: 100%;
+        padding-top: 3.9rem;
+    }
+
+    &__right {
+        max-width: 53.4rem;
+        width: 100%;
+    }
+
+    &__contacts {
+
+    }
+
+    &__contacts-container {
+        margin-top: 5.3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4.45rem;
+    }
+
+    &__delivery {
+        margin-top: 7rem;
+    }
+
+    &__delivery-container {
+        margin-top: 4.3em;
+
+        .radio {
+            margin-top: 4.6rem;
+        }
+    }
+
+    &__payments {
+        margin-top: 7rem;
+    }
+
+    &__payments-container {
+        margin-top: 4.3em;
+
+        .radio {
+            margin-top: 4.6rem;
+        }
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.6rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__description {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 3.1rem;
+        color: #46494F;
+        margin-top: 1.1rem;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+
+    &__input {
+
+        & .radio-buttons .radio {
+            font-family: 'PP Right Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.3rem;
+            line-height: 2.6rem;
+            text-transform: uppercase;
+            color: #46494F;
+        }
+    }
+
+    &__radio-description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #46494F;
+        margin-top: 0.5rem;
+        padding-left: 5rem;
+    }
+
+    &__address {
+        border-bottom: 0.1rem solid #454A4F;
+    }
+
+    &__sideblock {
+        background: #E5DFD7;
+        padding: 6.3rem 5.9rem 6.3rem 6rem;
+    }
+
+    &__side-title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.9rem;
+        line-height: 4.5rem;
+        text-transform: uppercase;
+        color: #46494F;
+        text-align: center;
+    }
+
+    &__list {
+        margin-top: 3.7rem;
+    }
+
+    &__product {
+        display: flex;
+        margin-top: 3.2rem;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__product-image {
+        width: 10.4rem;
+        height: 9.3rem;
+
+        img {
+            width: 10.4rem;
+            height: 9.3rem;
+            object-fit: cover;
+        }
+    }
+
+    &__product-body {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.8rem;
+        width: 100%;
+    }
+
+    &__product-title {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    &__product-name {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        text-transform: uppercase;
+        color: #4A4A4A;
+    }
+
+    &__product-count {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: #4A4A4A;
+
+    }
+
+    &__product-description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: #4A4A4A;
+        margin-top: 1rem;
+        max-width: 22.3rem;
+    }
+
+    &__price-block {
+        margin-top: 4.4rem;
+        padding-top: 4.1em;
+        padding-bottom: 3.4rem;
+        border-top: 1px solid rgba(184, 172, 176, 0.7);
+        border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+    }
+
+    &__price-line {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #46494F;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.4rem;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__price {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__total-price {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 2.6rem;
+        text-transform: uppercase;
+        color: #46494F;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3.9rem;
+
+        span {
+            font-family: 'PP Right Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #9D8E7A;
+        }
+    }
+
+    &__send {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        text-transform: uppercase;
+        color: #454A4F;
+        width: 100%;
+        min-height: 7.4rem;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+    }
+}

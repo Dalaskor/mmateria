@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 export function modalOrder () {
-    $('.product-hero__button').click(function() {
+    $('.product-hero__button_order').click(function() {
 		$('.fade').fadeIn();
         $('body').toggleClass('scroll-lock');
         $('.modal-order').show();
