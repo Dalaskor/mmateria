@@ -1,0 +1,181 @@
+.thanks {
+    padding-top: 16.6rem;
+    padding-bottom: 14rem;
+
+    &__container {
+        max-width: none;
+        padding: 0;
+        display: flex;
+    }
+
+    &__left {
+        display: flex;
+        background: url('../img/backgrounds/bg-sm.png') no-repeat center / cover;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 20.3rem;
+        padding-left: 7.3rem;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 4.7rem;
+        align-items: start;
+        padding-top: 8.8rem;
+        padding-left: 20rem;
+        padding-right: 15.2rem;
+    }
+
+    &__main-title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 6.2rem;
+        text-transform: uppercase;
+        color: #46494F;
+        max-width: 34.1rem;
+    }
+
+    &__back {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #46494F;
+    }
+
+    &__image {
+        max-width: 45.9rem;
+        max-height: 43.9rem;
+
+        img {
+            width: 45.9rem;
+            height: 43.9rem;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 3.4rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__list {
+        margin-top: 3.4rem;
+        border-top: 0.1rem solid #DCD5CB;
+        border-bottom: 0.1rem solid #DCD5CB;
+    }
+
+    &__item {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+        border-bottom: 0.1rem solid #DCD5CB;
+        display: flex;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__item-image {
+        max-width: 10.3rem;
+        max-height: 9.3rem;
+
+        img {
+            width: 10.3rem;
+            height: 9.3rem;
+            object-fit: cover;
+        }
+    }
+
+    &__item-body {
+        margin-left: 1.8rem;
+    }
+
+    &__item-title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        text-transform: uppercase;
+        color: #4A4A4A;
+    }
+
+    &__item-description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: #4A4A4A;
+        max-width: 21.6rem;
+    }
+
+    &__item-right {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    &__item-price {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__item-count {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: #4A4A4A;
+    }
+
+    &__total-block {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+    &__total {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 2.6rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__price {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #9D8E7A;
+    }
+}

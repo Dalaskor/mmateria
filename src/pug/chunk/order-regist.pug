@@ -1,144 +1,145 @@
-section.order-regist
-    .order-regist__container
-        .order-regist__head
-            .order-regist__title
-                | оформление заказа
-            a.order-regist__back
-                .order-regist__back-image
-                    img(src="img/buttons/arrow.svg")
-                p Назад в корзину
-        .order-regist__form.form-order-regist
-            .form-order-regist__left
-                .form-order-regist__contacts
-                    .form-order-regist__title
-                        | контактная информация
-                    .form-order-regist__description
-                        | Укажите свой адрес, чтобы увидеть доступные способы доставки ниже.
-                    
-                    .form-order-regist__contacts-container
-                    
-                        .form-order-regist__inner
-                            input(type="text", placeholder="Ваше имя").form-order-regist__input
-                            input(type="text", placeholder="Ваша фамилия").form-order-regist__input
+main.main
+    section.order-regist
+        .order-regist__container
+            .order-regist__head
+                .order-regist__title
+                    | оформление заказа
+                a.order-regist__back
+                    .order-regist__back-image
+                        img(src="img/buttons/arrow.svg")
+                    p Назад в корзину
+            .order-regist__form.form-order-regist
+                .form-order-regist__left
+                    .form-order-regist__contacts
+                        .form-order-regist__title
+                            | контактная информация
+                        .form-order-regist__description
+                            | Укажите свой адрес, чтобы увидеть доступные способы доставки ниже.
                         
-                        .form-order-regist__address.input
-                            select(name="selectCity").select
-                                option(disabled) Страна
-                                option(value="default") Россия
-                                option(value="priseUpper") Беларусь
-                                option(value="priseLower") Казахстан
-
-                        .form-order-regist__inner
-                            input(type="text", placeholder="Город").form-order-regist__input
-                            input(type="text", placeholder="Индекс").form-order-regist__input
-                        .form-order-regist__inner
-                            input(type="text", placeholder="Телефон").form-order-regist__input
-                            input(type="text", placeholder="Email").form-order-regist__input
-
-                .form-order-regist__delivery
-
-                    .form-order-regist__title
-                        | Доставка
-
-                    .form-order-regist__delivery-container
-                        .form-order-regist__input.input
-                            .radio-buttons
-                                .radio
-                                    | Самомвывоз
-                                    input(type="radio", name="delivery")
-                                p.form-order-regist__radio-description Бесплатно.
-                                .radio
-                                    | Доставка домой
-                                    input(type="radio", name="delivery")
-                                p.form-order-regist__radio-description Стоимость зависит от вида товара и рассчитывается менеджером индивидуально.
-                                .radio
-                                    | Доставка в регионы
-                                    input(type="radio", name="delivery")
-                                p.form-order-regist__radio-description
-                                    a Ознакомиться с условиями доставки в регионы.
-
-                .form-order-regist__payments
-
-                    .form-order-regist__title
-                        | оплата
-
-                    .form-order-regist__payments-container
-                        .form-order-regist__input.input
-                            .radio-buttons
-                                .radio
-                                    | при получении наличными
-                                    input(type="radio", name="payment")
-                                p.form-order-regist__radio-description Возможен в городах, где расположены наши магазины.
-                                .radio
-                                    | БЕЗНАЛИЧНЫЙ РАСЧЁТ
-                                    input(type="radio", name="payment")
-                                p.form-order-regist__radio-description Счет будет выслан на указанный e-mail после подтверждения заказа менеджером.
-                                .radio
-                                    | ОНЛАЙН-ОПЛАТА КАРТОЙ
-                                    input(type="radio", name="payment")
-                                p.form-order-regist__radio-description Visa/Master Card после подтверждения заказа менеджером.
-
-                    //- .form-order-regist__input.input
-                    //-     .checkbox
-                    //-         | Я согласен(а) на обработку персональных данных
-                    //-         input(type="checkbox", name="")
+                        .form-order-regist__contacts-container
                         
-                    //- .form-order-regist__input.input
-                    //-     .radio-buttons
-                    //-         .radio
-                    //-             | radio1
-                    //-             input(type="radio", name="radio")
-                    //-         .radio
-                    //-             | radio2
-                    //-             input(type="radio", name="radio")
-            .form-order-regist__right
-                .form-order-regist__sideblock
-                    .form-order-regist__side-title
-                        | Ваш Заказ
-                    .form-order-regist__list
-                        .form-order-regist__product
-                            .form-order-regist__product-image
-                                img(src="img/products/product-1.png")
-                            .form-order-regist__product-body
-                                .form-order-regist__product-title
-                                    .form-order-regist__product-name
-                                        | Фактурная абстракция
-                                    .form-order-regist__product-count
-                                        | x1
-                                .form-order-regist__product-description
-                                    | 70х70 см, натуральный холст, акриловые краски
-                        .form-order-regist__product
-                            .form-order-regist__product-image
-                                img(src="img/products/product-2.png")
-                            .form-order-regist__product-body
-                                .form-order-regist__product-title
-                                    .form-order-regist__product-name
-                                        | название
-                                    .form-order-regist__product-count
-                                        | x1
-                                .form-order-regist__product-description
-                                    | 70х70 см, натуральный холст, акриловые краски
-                        .form-order-regist__product
-                            .form-order-regist__product-image
-                                img(src="img/products/product-3.png")
-                            .form-order-regist__product-body
-                                .form-order-regist__product-title
-                                    .form-order-regist__product-name
-                                        | название
-                                    .form-order-regist__product-count
-                                        | x1
-                                .form-order-regist__product-description
-                                    | 70х70 см, натуральный холст, акриловые краски
-                    .form-order-regist__price-block
-                        .form-order-regist__price-line
-                            p Промежуточная цена
-                            p.form-order-regist__price 400.000 р.
-                        .form-order-regist__price-line
-                            p Доставка
-                            p.form-order-regist__price 3.000 р.
-                    .form-order-regist__total-price
-                        p Итого
-                        p
-                            span 403.000 р.
-                    a.form-order-regist__send
-                        | подтвердить заказ
+                            .form-order-regist__inner
+                                input(type="text", placeholder="Ваше имя").form-order-regist__input
+                                input(type="text", placeholder="Ваша фамилия").form-order-regist__input
+                            
+                            .form-order-regist__address.input
+                                select(name="selectCity").select
+                                    option(disabled) Страна
+                                    option(value="default") Россия
+                                    option(value="priseUpper") Беларусь
+                                    option(value="priseLower") Казахстан
+
+                            .form-order-regist__inner
+                                input(type="text", placeholder="Город").form-order-regist__input
+                                input(type="text", placeholder="Индекс").form-order-regist__input
+                            .form-order-regist__inner
+                                input(type="text", placeholder="Телефон").form-order-regist__input
+                                input(type="text", placeholder="Email").form-order-regist__input
+
+                    .form-order-regist__delivery
+
+                        .form-order-regist__title
+                            | Доставка
+
+                        .form-order-regist__delivery-container
+                            .form-order-regist__input.input
+                                .radio-buttons
+                                    .radio
+                                        | Самомвывоз
+                                        input(type="radio", name="delivery")
+                                    p.form-order-regist__radio-description Бесплатно.
+                                    .radio
+                                        | Доставка домой
+                                        input(type="radio", name="delivery")
+                                    p.form-order-regist__radio-description Стоимость зависит от вида товара и рассчитывается менеджером индивидуально.
+                                    .radio
+                                        | Доставка в регионы
+                                        input(type="radio", name="delivery")
+                                    p.form-order-regist__radio-description
+                                        a Ознакомиться с условиями доставки в регионы.
+
+                    .form-order-regist__payments
+
+                        .form-order-regist__title
+                            | оплата
+
+                        .form-order-regist__payments-container
+                            .form-order-regist__input.input
+                                .radio-buttons
+                                    .radio
+                                        | при получении наличными
+                                        input(type="radio", name="payment")
+                                    p.form-order-regist__radio-description Возможен в городах, где расположены наши магазины.
+                                    .radio
+                                        | БЕЗНАЛИЧНЫЙ РАСЧЁТ
+                                        input(type="radio", name="payment")
+                                    p.form-order-regist__radio-description Счет будет выслан на указанный e-mail после подтверждения заказа менеджером.
+                                    .radio
+                                        | ОНЛАЙН-ОПЛАТА КАРТОЙ
+                                        input(type="radio", name="payment")
+                                    p.form-order-regist__radio-description Visa/Master Card после подтверждения заказа менеджером.
+
+                        //- .form-order-regist__input.input
+                        //-     .checkbox
+                        //-         | Я согласен(а) на обработку персональных данных
+                        //-         input(type="checkbox", name="")
+                            
+                        //- .form-order-regist__input.input
+                        //-     .radio-buttons
+                        //-         .radio
+                        //-             | radio1
+                        //-             input(type="radio", name="radio")
+                        //-         .radio
+                        //-             | radio2
+                        //-             input(type="radio", name="radio")
+                .form-order-regist__right
+                    .form-order-regist__sideblock
+                        .form-order-regist__side-title
+                            | Ваш Заказ
+                        .form-order-regist__list
+                            .form-order-regist__product
+                                .form-order-regist__product-image
+                                    img(src="img/products/product-1.png")
+                                .form-order-regist__product-body
+                                    .form-order-regist__product-title
+                                        .form-order-regist__product-name
+                                            | Фактурная абстракция
+                                        .form-order-regist__product-count
+                                            | x1
+                                    .form-order-regist__product-description
+                                        | 70х70 см, натуральный холст, акриловые краски
+                            .form-order-regist__product
+                                .form-order-regist__product-image
+                                    img(src="img/products/product-2.png")
+                                .form-order-regist__product-body
+                                    .form-order-regist__product-title
+                                        .form-order-regist__product-name
+                                            | название
+                                        .form-order-regist__product-count
+                                            | x1
+                                    .form-order-regist__product-description
+                                        | 70х70 см, натуральный холст, акриловые краски
+                            .form-order-regist__product
+                                .form-order-regist__product-image
+                                    img(src="img/products/product-3.png")
+                                .form-order-regist__product-body
+                                    .form-order-regist__product-title
+                                        .form-order-regist__product-name
+                                            | название
+                                        .form-order-regist__product-count
+                                            | x1
+                                    .form-order-regist__product-description
+                                        | 70х70 см, натуральный холст, акриловые краски
+                        .form-order-regist__price-block
+                            .form-order-regist__price-line
+                                p Промежуточная цена
+                                p.form-order-regist__price 400.000 р.
+                            .form-order-regist__price-line
+                                p Доставка
+                                p.form-order-regist__price 3.000 р.
+                        .form-order-regist__total-price
+                            p Итого
+                            p
+                                span 403.000 р.
+                        a.form-order-regist__send
+                            | подтвердить заказ
