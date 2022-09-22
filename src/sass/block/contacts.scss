@@ -1,0 +1,105 @@
+.contacts {
+    &__container {
+        padding-top: 18.7rem;
+        padding-bottom: 6.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__sub-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #46494F;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8rem;
+        line-height: 6.2rem;
+        text-transform: uppercase;
+        color: #46494F;
+        margin-top: 2.7rem;
+    }
+
+    &__columns {
+        margin-top: 9rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 14.7rem;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__column-title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 2.6rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__column-body {
+        p {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: #454A4F;
+            max-width: 33.3rem;
+            text-align: center;
+            margin-top: 0.3rem;
+
+            &:first-child {
+                margin-top: 2.4rem;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.6rem;
+        margin-top: 1.7rem;
+    }
+
+    &__social {
+        width: 5.3rem;
+        height: 5.3rem;
+        border: 1.2px solid #9D8E7A;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+
+    &__map {
+        width: 100%;
+        margin-top: 4.7rem;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        iframe {
+            width: 100%;
+            height: 43.4rem;
+        }
+    }
+}
