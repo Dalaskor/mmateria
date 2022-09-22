@@ -9,6 +9,7 @@ import { productDetail } from './module/productDetail.js';
 import { mainMenu } from './module/mainMenu.js';
 import { modalOrder } from './module/modalOrder.js';
 import { cart } from './module/cart.js';
+import { technologySwiper } from './module/technologySwiper.js';
 
 Fancybox.bind('[data-fancybox="productDetail"]', {
     Toolbar: {
@@ -27,4 +28,5 @@ $(document).ready(function() {
     mainMenu();
     modalOrder();
     cart();
+    technologySwiper();
 });

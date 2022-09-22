@@ -1,0 +1,35 @@
+.about-hero {
+    
+    &__wrapper {
+        background: url('../img/backgrounds/bg-about.png') no-repeat center / cover;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+        padding-top: 20.4rem;
+        padding-bottom: 14rem;
+        margin-bottom: 14rem;
+    }
+
+    &__sub-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: #454A4F;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8rem;
+        line-height: 6.2rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+}

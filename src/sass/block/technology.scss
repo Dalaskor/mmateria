@@ -1,0 +1,127 @@
+.technology {
+    &__container {
+        margin-bottom: 6.1rem;
+    }
+
+    &__title {
+        p {
+            max-width: 42.8rem;
+        }
+    }
+
+    &__slider {
+        margin-top: 10.1rem;
+    }
+}
+
+.slider-technology {
+    width: 100%;
+    overflow: hidden;
+
+    &__wrapper {
+        width: 100%;
+        // display: flex;
+        display: -webkit-box;
+    }
+
+    &__slide {
+        display: flex;
+        padding-right: 0.2rem;
+    }
+
+    &__cloumn-1 {}
+
+    &__column-2 {
+        max-width: 42.8rem;
+        width: 100%;
+        margin-left: 6.5rem;
+    }
+
+    &__column-3 {
+        margin-left: auto;
+    }
+
+    &__main-image {
+        img {
+            width: 46.1rem;
+            height: 61.5em;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 2.6rem;
+        text-transform: uppercase;
+        color: #46494F;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #454A4F;
+        margin-top: 3.8rem;
+    }
+
+    &__more {
+        max-width: 10.1rem;
+        margin-top: 8.9rem;
+    }
+
+    &__image {
+        width: 46rem;
+        height: 36.9rem;
+        object-fit: cover;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 5.1rem;
+    }
+
+    &__pagination {
+        display: flex;
+        gap: 2.8rem;
+        align-items: center;
+    }
+
+    &__bullet {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #454A4F;
+        padding-bottom: 0.8rem;
+
+        &_active {
+            font-weight: 700;
+            border-bottom: 1px solid #454A4F;
+        }
+    }
+
+    &__btn {
+        width: 4.1rem;
+        height: 1rem;
+
+        img {
+            width: 4.1rem;
+            height: 1rem;
+            object-fit: contain;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

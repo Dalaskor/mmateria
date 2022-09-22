@@ -3,6 +3,7 @@
 @import "_mixins";
 @import "set";
 @import "vendor/fancybox";
+@import "vendor/swiper.min.css";
 
 
 [class*="__container"] {
@@ -319,3 +320,6 @@ input[type="text"] {
 @import "block/thanks";
 @import "block/error";
 @import "block/contacts";
+@import "block/about-hero";
+@import "block/our-production";
+@import "block/technology";
