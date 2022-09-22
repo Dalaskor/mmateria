@@ -1,13 +1,13 @@
 .main-menu {
     display: none;
-    background-color: #FCFBFB;
+    background: #FCFBFB url('../img/backgrounds/bg-menu.png') no-repeat 10% 10% / cover;
     width: 100%;
     position: absolute;
     left: 0;
     top: 9.2rem;
     z-index: 9999;
     border-top: 0.1rem solid #DCD5CB;
-    box-shadow: 0rem 3rem 5.8rem 0rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 3rem 7rem 0rem rgba(0, 0, 0, 0.1);
 
     &__container {
         margin-top: 5.9rem;
@@ -35,6 +35,7 @@
     &__list {
         display: flex;
         flex-direction: column;
+        align-items: start;
         gap: 1.5rem;
         margin-top: 0.8rem;
     }
@@ -46,10 +47,14 @@
         font-size: $base-font-size;
         line-height: $base-line-height;
         color: $base-color-text;
+        padding-bottom: 0.1rem;
+        border-bottom: 0.17rem solid transparent;
         transition: 0.4s;
         
         &:hover {
             cursor: pointer;
+            border-bottom: 0.17rem solid rgba(143, 139, 141, 0.6);
+            // text-decoration: underline;
             color: $base-color-text-hover;
         }
     }
