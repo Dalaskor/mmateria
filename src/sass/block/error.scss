@@ -1,0 +1,52 @@
+.error {
+    padding-top: 16.6rem;
+    margin-bottom: 14rem;
+
+    &__container {
+        max-width: none;
+        padding: 0px 0px 0px 0px;
+        padding-left: 20.4rem;
+        margin-right: 20.4rem;
+        display: flex;
+        justify-content: space-between;
+        background: url('../img/backgrounds/bg-error.png') no-repeat center / cover;
+    }
+
+    &__text {
+        padding-top: 8.8rem;
+    }
+
+    &__title {
+        font-family: 'PP Right Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 6.2rem;
+        text-transform: uppercase;
+        color: #46494F;
+        max-width: 87.6rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #46494F;
+        margin-top: 2rem;
+        max-width: 82.3rem;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__back {
+        margin-top: 3.9rem;
+    }
+
+    &__image {
+        img {}
+    }
+}

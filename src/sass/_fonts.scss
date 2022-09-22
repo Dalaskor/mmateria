@@ -37,6 +37,24 @@
 @font-face {
     font-family: 'Gilroy';
     font-display: swap;
+    src: url("./../font/Gilroy-Semibold.ttf")
+        format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url("./../font/Gilroy-Semibold.woff2")
+        format("woff2"), url("./../font/Gilroy-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
     src: url("./../font/Gilroy-Bold.ttf")
         format("truetype");
     font-weight: 700;
@@ -49,6 +67,24 @@
     src: url("./../font/Gilroy-Bold.woff2")
         format("woff2"), url("./../font/Gilroy-Bold.woff") format("woff");
     font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Sans';
+    font-display: swap;
+    src: url("./../font/PP-Right-Sans-Light.ttf")
+        format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Sans';
+    font-display: swap;
+    src: url("./../font/PP-Right-Sans-Light.woff2")
+        format("woff2"), url("./../font/PP-Right-Sans-Light.woff") format("woff");
+    font-weight: 300;
     font-style: normal;
 }
 
